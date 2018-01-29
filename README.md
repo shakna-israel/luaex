@@ -12,6 +12,8 @@ See the [LICENSE](LICENSE) file.
 
 # Issues
 
+[![Build Status](https://travis-ci.org/shakna-israel/luaex.svg?branch=master)](https://travis-ci.org/shakna-israel/luaex)
+
 ---
 
 Currently, we're just utilising luaL_dostring to handle everything.
