@@ -6,7 +6,8 @@ source = {
 }
 description = {
   summary = "Convert Lua files to executables",
-  detailed = [=[luaex is currently a braindead Lua->C converter, that then calls the system cc to generate an executable file. ]=]
+  detailed = [=[luaex is currently a braindead Lua->C converter, that then calls the system cc to generate an executable file.
+  ]=],
   homepage = "https://github.com/shakna-israel/luaex",
   license = "MIT"
 }
@@ -17,7 +18,7 @@ build = {
   type = "none",
   install = {
     lua = {
-      "luaex\luaex.lua"
+      "luaex/luaex.lua"
     }
   }
 }
