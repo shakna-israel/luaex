@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Ubuntu is different than everyone else.
+sed -i -e 's/llua/liblua/g' "luaex.lua"
+
 echo 'print("Hello, World!")' > test1.lua
 lua luaex.lua test1.lua
 luv=$(lua test1.lua)
