@@ -34,7 +34,7 @@ local compile_c = function(c_data, outfile)
   local cfile = io.open(cfile_name, "w")
   cfile:write(c_data)
   cfile:close()
-  os.execute("cc -o " .. tostring(outfile) .. " " .. tostring(cfile_name) .. " -Wall -I/usr/include/lua/5.3 -llua")
+  os.execute("cc -o " .. tostring(outfile) .. " " .. tostring(cfile_name) .. " -Wall -I/usr/include/lua/5.1 -llua")
   os.remove(cfile_name)
 end
 
